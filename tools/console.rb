@@ -3,10 +3,15 @@ require_relative '../config/environment.rb'
 def reload
   load 'config/environment.rb'
 end
-# Insert code here to run before hitting the binding.pry
-# This is a convenient place to define variables and/or set up new object instances,
-# so they will be available to test and play around with in your console
 
+thekeeps = Cult.new("The Keeps", "chicago", 1955, "we are old and good!")
+themansons = Cult.new("The Mansons", "california", 1970, "Hollywood")
+heavensgate = Cult.new("Heavens Gate", "california", 1974, "Men's eyes")
+thepeoples = Cult.new("The People's Temple ", "chicago", 1955, "The Deciples of Christ")
+#Cult.find_by_location("california")
+
+josue = Follower.new("josue")
 binding.pry
+
 
 puts "Mwahahaha!" # just in case pry is buggy and exits
