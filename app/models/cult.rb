@@ -31,10 +31,12 @@ class Cult
     def cult_slogan
         @slogan
     end 
-
+    
+    #founding_year
     # def recruit_follower(follower)
     #     @all << self 
     # end 
+    
     def cult_population
         followers.length
     end 
