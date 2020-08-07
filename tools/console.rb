@@ -14,8 +14,8 @@ thepeoples = Cult.new("The People's Temple ", "chicago", 1955, "The Deciples of 
 
 josue = Follower.new("josue", 22, "just do it")
 brian = Follower.new("Brian", 34, "I hate this")
-member1 = BloodOath.new(brian, thepeoples)
-member2 = BloodOath.new(josue, thepeoples)
+member1 = BloodOath.new(thepeoples, brian)
+member2 = BloodOath.new(thepeoples, josue)
 
 
 

@@ -22,8 +22,9 @@ class Follower
     end
 
     def cults
-        blood_oath.map do |blood|
-            blood.follower 
+        filtered_bloodoaths = BloodOath.all.select do |bloodoath_instance|
+           bloodoath_instance.follower == self
         end
+        filtered_bloodoaths.length
     end
 end 
